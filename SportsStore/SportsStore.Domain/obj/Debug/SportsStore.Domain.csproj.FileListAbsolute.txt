@@ -1,0 +1,7 @@
+I:\prog\ASP\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll
+I:\prog\ASP\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.pdb
+I:\prog\ASP\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.dll
+I:\prog\ASP\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.pdb
+I:\prog\ASP\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.dll
+I:\prog\ASP\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.xml
+I:\prog\ASP\SportsStore\SportsStore.Domain\bin\Debug\ru\EntityFramework.resources.dll
