@@ -4,6 +4,8 @@ using System.Web.Optimization;
 using System.Web.Routing;
 
 using SportsStore.WebUI.Infrastructure;
+using SportsStore.Domain.Entities;
+using SportsStore.WebUI.Binders;
 
 namespace SportsStore.WebUI
 {
@@ -24,6 +26,9 @@ namespace SportsStore.WebUI
             // сообщить MVC, что для создания объектов контроллера
             // мы хотим использовать класс NinjectController.
             ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory());
+
+            // использовать класс CartModelBinder для создания экземпляров объекта Cart.
+            ModelBinders.Binders.Add(typeof(Cart), new CartModelBinder());
         }
     }
 }
