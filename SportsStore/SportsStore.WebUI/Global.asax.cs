@@ -6,6 +6,8 @@ using System.Web.Routing;
 using SportsStore.WebUI.Infrastructure;
 using SportsStore.Domain.Entities;
 using SportsStore.WebUI.Binders;
+using System.Data.Entity;
+using SportsStore.Domain.Concrete;
 
 namespace SportsStore.WebUI
 {
@@ -29,6 +31,10 @@ namespace SportsStore.WebUI
 
             // использовать класс CartModelBinder для создания экземпляров объекта Cart.
             ModelBinders.Binders.Add(typeof(Cart), new CartModelBinder());
+
+            // если ошибка "The model backing the 'EFDbContext' context has changed since the database was created.."
+            // включить миграцию
+            Database.SetInitializer<EFDbContext>(null);
         }
     }
 }
